@@ -55,7 +55,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="NkX-Ho-6Cf"/>
                                     <barButtonItem title="Music" id="GTh-RW-rIF">
                                         <connections>
-                                            <segue destination="6l3-wl-tyN" kind="show" id="Q16-uo-fRS"/>
+                                            <segue destination="6l3-wl-tyN" kind="show" identifier="MyMusicSeque" id="Q16-uo-fRS"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -155,7 +155,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i1f-yM-vct" id="7pC-Lw-PLh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

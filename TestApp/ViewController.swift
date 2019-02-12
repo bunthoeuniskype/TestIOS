@@ -23,6 +23,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print(rowCounter)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            print("Why are you shaking me?")
+        }
+    }
+    
+    @objc
+    func swiped(sender:UISwipeGestureRecognizer)  {
+            switch sender.direction{
+                case UISwipeGestureRecognizerDirection.left:
+                     self.performSegue(withIdentifier: "MyMusicSeque", sender: nil)
+                default:
+                
+                break
+            }
+    
     }
 
     override func didReceiveMemoryWarning() {
