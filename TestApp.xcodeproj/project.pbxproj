@@ -22,6 +22,7 @@
 		849720A122131AC000EA78F7 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 849720A022131ABE00EA78F7 /* bird.jpg */; };
 		84EC17FE2211ABC600CF1E21 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC17FD2211ABC600CF1E21 /* TableViewController.swift */; };
 		84EC18002211BCAC00CF1E21 /* MyTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC17FF2211BCAC00CF1E21 /* MyTableviewController.swift */; };
+		84F9B12B2215A85300A4CD17 /* my_data_core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F9B1292215A85300A4CD17 /* my_data_core.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		849720A222131AC600EA78F7 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
 		84EC17FD2211ABC600CF1E21 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		84EC17FF2211BCAC00CF1E21 /* MyTableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableviewController.swift; path = TestApp/MyTableviewController.swift; sourceTree = "<group>"; };
+		84F9B12A2215A85300A4CD17 /* my_data_core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = my_data_core.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		84256C73221057F300AD5874 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				84F9B1292215A85300A4CD17 /* my_data_core.xcdatamodeld */,
 				849720A222131AC600EA78F7 /* bird.jpg */,
 				8497209C2213110200EA78F7 /* music.mp3 */,
 				8497209722130A5B00EA78F7 /* MusicController.swift */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F9B12B2215A85300A4CD17 /* my_data_core.xcdatamodeld in Sources */,
 				84256C77221057F300AD5874 /* ViewController.swift in Sources */,
 				84EC18002211BCAC00CF1E21 /* MyTableviewController.swift in Sources */,
 				84256C7D221057F300AD5874 /* TestApp.xcdatamodeld in Sources */,
@@ -609,6 +613,16 @@
 			);
 			currentVersion = 84256C7C221057F300AD5874 /* TestApp.xcdatamodel */;
 			path = TestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		84F9B1292215A85300A4CD17 /* my_data_core.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84F9B12A2215A85300A4CD17 /* my_data_core.xcdatamodel */,
+			);
+			currentVersion = 84F9B12A2215A85300A4CD17 /* my_data_core.xcdatamodel */;
+			path = my_data_core.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
