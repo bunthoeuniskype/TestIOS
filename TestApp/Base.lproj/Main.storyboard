@@ -73,7 +73,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="p33-jP-JPX">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="4Bs-KI-Dlm"/>
+                        <barButtonItem key="leftBarButtonItem" title="WebView" id="4Bs-KI-Dlm">
+                            <connections>
+                                <segue destination="SDe-ND-JRd" kind="show" identifier="MyWebSeque" id="Obq-HH-Ngc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Seque" id="Xp8-ug-WGT">
                             <connections>
                                 <segue destination="wlR-3n-rvT" kind="show" id="s22-wu-jN5"/>
@@ -183,6 +187,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFu-8v-UKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2226" y="-296"/>
+        </scene>
+        <!--My Web View Controller-->
+        <scene sceneID="ecy-p5-kZC">
+            <objects>
+                <viewController id="SDe-ND-JRd" customClass="MyWebViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0HK-2K-jew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-vl-cJm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0UL-vl-cJm" firstAttribute="bottom" secondItem="Osk-Rh-1A9" secondAttribute="bottom" id="31K-we-ACU"/>
+                            <constraint firstItem="0UL-vl-cJm" firstAttribute="leading" secondItem="Osk-Rh-1A9" secondAttribute="leading" id="Yme-ID-901"/>
+                            <constraint firstItem="0UL-vl-cJm" firstAttribute="trailing" secondItem="Osk-Rh-1A9" secondAttribute="trailing" id="jMm-1g-3PO"/>
+                            <constraint firstItem="0UL-vl-cJm" firstAttribute="top" secondItem="Osk-Rh-1A9" secondAttribute="top" id="zWK-el-p0s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Osk-Rh-1A9"/>
+                    </view>
+                    <connections>
+                        <outlet property="myWebView" destination="0UL-vl-cJm" id="794-HS-8qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mli-Jg-iKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X9b-jy-A5f">
