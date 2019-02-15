@@ -15,11 +15,13 @@
 		84256C82221057F300AD5874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84256C80221057F300AD5874 /* LaunchScreen.storyboard */; };
 		84256C8D221057F300AD5874 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256C8C221057F300AD5874 /* TestAppTests.swift */; };
 		84256C98221057F300AD5874 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256C97221057F300AD5874 /* TestAppUITests.swift */; };
+		848CE6F42216F5B600CA42FF /* LocalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CE6F32216F5B600CA42FF /* LocalController.swift */; };
 		8497209822130A5B00EA78F7 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497209722130A5B00EA78F7 /* MusicController.swift */; };
 		8497209B22130FFB00EA78F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8497209A22130FFB00EA78F7 /* AVFoundation.framework */; };
 		8497209D2213110300EA78F7 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8497209C2213110200EA78F7 /* music.mp3 */; };
 		8497209F2213132200EA78F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8497209E2213132200EA78F7 /* MediaPlayer.framework */; };
 		849720A122131AC000EA78F7 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 849720A022131ABE00EA78F7 /* bird.jpg */; };
+		84B68E8B2217002B00F89A49 /* GoeIPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B68E8A2217002B00F89A49 /* GoeIPModel.swift */; };
 		84EC17FE2211ABC600CF1E21 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC17FD2211ABC600CF1E21 /* TableViewController.swift */; };
 		84EC18002211BCAC00CF1E21 /* MyTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC17FF2211BCAC00CF1E21 /* MyTableviewController.swift */; };
 		84F9B12B2215A85300A4CD17 /* my_data_core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F9B1292215A85300A4CD17 /* my_data_core.xcdatamodeld */; };
@@ -57,12 +59,14 @@
 		84256C93221057F300AD5874 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84256C97221057F300AD5874 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		84256C99221057F300AD5874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848CE6F32216F5B600CA42FF /* LocalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalController.swift; sourceTree = "<group>"; };
 		8497209722130A5B00EA78F7 /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
 		8497209A22130FFB00EA78F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8497209C2213110200EA78F7 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../../music.mp3; sourceTree = "<group>"; };
 		8497209E2213132200EA78F7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		849720A022131ABE00EA78F7 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bird.jpg; path = ../bird.jpg; sourceTree = "<group>"; };
 		849720A222131AC600EA78F7 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
+		84B68E8A2217002B00F89A49 /* GoeIPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoeIPModel.swift; sourceTree = "<group>"; };
 		84EC17FD2211ABC600CF1E21 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		84EC17FF2211BCAC00CF1E21 /* MyTableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableviewController.swift; path = TestApp/MyTableviewController.swift; sourceTree = "<group>"; };
 		84F9B12A2215A85300A4CD17 /* my_data_core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = my_data_core.xcdatamodel; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		84256C73221057F300AD5874 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				84B68E8A2217002B00F89A49 /* GoeIPModel.swift */,
+				848CE6F32216F5B600CA42FF /* LocalController.swift */,
 				84F9B1292215A85300A4CD17 /* my_data_core.xcdatamodeld */,
 				849720A222131AC600EA78F7 /* bird.jpg */,
 				8497209C2213110200EA78F7 /* music.mp3 */,
@@ -303,10 +309,12 @@
 				84F9B12B2215A85300A4CD17 /* my_data_core.xcdatamodeld in Sources */,
 				84256C77221057F300AD5874 /* ViewController.swift in Sources */,
 				84EC18002211BCAC00CF1E21 /* MyTableviewController.swift in Sources */,
+				84B68E8B2217002B00F89A49 /* GoeIPModel.swift in Sources */,
 				84256C7D221057F300AD5874 /* TestApp.xcdatamodeld in Sources */,
 				84256C75221057F300AD5874 /* AppDelegate.swift in Sources */,
 				84EC17FE2211ABC600CF1E21 /* TableViewController.swift in Sources */,
 				8497209822130A5B00EA78F7 /* MusicController.swift in Sources */,
+				848CE6F42216F5B600CA42FF /* LocalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
