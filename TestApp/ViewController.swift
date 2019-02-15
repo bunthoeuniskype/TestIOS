@@ -16,16 +16,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtWel: UITextField!
     @IBOutlet weak var lblWel: UILabel!
     
+    @IBOutlet weak var imgHome: UIImageView!
+    
     @IBAction func btnWel(_ sender: Any) {
         lblWel.text = txtWel.text
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://www.phnompenhpost.com/sites/default/files/styles/image_780x440/public/field/image/6-hitachi.jpg")
+        let data_image = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+        self.imgHome.image = UIImage(data: data_image!)
+        
         // Do any additional setup after loading the view, typically from a nib.
         print(rowCounter)
         // createUserCore()
-        retrieveUserCore()
+        // retrieveUserCore()
         //updateUserCore()
         // deleteUserCore()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
